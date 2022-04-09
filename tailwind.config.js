@@ -18,8 +18,12 @@ module.exports = {
       },
       spacing: {
         88: '22rem',
+        '9/10': '90%',
       },
     },
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 };
