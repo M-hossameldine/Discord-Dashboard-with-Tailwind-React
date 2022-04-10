@@ -1,8 +1,9 @@
 import TopNavigation from '../TopNavigation/TopNavigation';
 import { PostsDummyData as PostsData } from '../../constants/data';
 import Post from './Post';
+import BottomBar from './BottomBar';
+
 const ContentContainer = () => {
-  console.log(PostsData);
   return (
     <div className='content-container'>
       <TopNavigation />
@@ -11,6 +12,7 @@ const ContentContainer = () => {
           PostsData.length !== 0 &&
           PostsData.map((post) => <Post key={post.id} post={post} />)}
       </div>
+      <BottomBar />
     </div>
   );
 };

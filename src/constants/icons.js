@@ -1,6 +1,7 @@
 import {
   BsHash,
   BsPlus,
+  BsPlusCircleFill,
   BsFillLightningFill,
   BsGearFill,
 } from 'react-icons/bs';
@@ -22,6 +23,7 @@ import {
 const Icons = {
   BsHash,
   BsPlus,
+  BsPlusCircleFill,
   BsFillLightningFill,
   BsGearFill,
   FaChevronDown,
