@@ -1,7 +1,8 @@
 import { useState } from 'react';
 
-import { BsHash } from 'react-icons/bs';
-import { FaChevronDown, FaChevronRight, FaPlus } from 'react-icons/fa';
+import icons from '../../constants/icons';
+
+const { BsHash, FaChevronDown, FaChevronRight, FaPlus } = icons;
 
 const Dropdown = ({ channelTitle, selections }) => {
   const [expanded, setExpanded] = useState(true);

@@ -1,21 +1,5 @@
-import { v4 as uuid } from 'uuid';
-
+import { ChannelData as Channels } from '../../constants/data';
 import Dropdown from './Dropdown';
-
-const Channels = [
-  { id: uuid(), title: 'Topics', selections: ['Tailwind-css', 'React'] },
-  {
-    id: uuid(),
-    title: 'Questions',
-    selections: ['jit-compilation', 'purge-files', 'dark-mode'],
-  },
-  { id: uuid(), title: 'Random', selections: ['variants', 'plugins'] },
-  { id: uuid(), title: 'Random', selections: ['variants', 'plugins'] },
-  { id: uuid(), title: 'Random', selections: ['variants', 'plugins'] },
-  { id: uuid(), title: 'Random', selections: ['variants', 'plugins'] },
-  { id: uuid(), title: 'Random', selections: ['variants', 'plugins'] },
-  { id: uuid(), title: 'Random', selections: ['variants', 'plugins'] },
-];
 
 const ChannelBar = () => {
   return (

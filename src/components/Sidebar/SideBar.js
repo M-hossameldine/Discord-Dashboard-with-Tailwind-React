@@ -1,22 +1,8 @@
-import { v4 as uuid } from 'uuid';
-import {
-  BsPlus,
-  BsFillLightningFill as BsLightning,
-  BsGearFill,
-} from 'react-icons/bs';
-import { FaFire, FaPoo } from 'react-icons/fa';
+import React from 'react';
 
 import SideBarIcon from './SideBarIcon';
 import Divider from './Divider';
-import React from 'react';
-
-const sideBarList = [
-  { icon: <BsPlus size={28} />, text: 'tooltip', id: uuid() },
-  { icon: <BsLightning size={32} />, text: 'tooltip', id: uuid() },
-  { icon: <BsGearFill size={20} />, text: 'tooltip', id: uuid() },
-  { icon: <FaFire size={20} />, text: 'tooltip', id: uuid() },
-  { icon: <FaPoo size={22} />, text: 'tooltip', id: uuid() },
-];
+import { sideBarIconData as sideBarList } from '../../constants/data';
 
 const SideBar = () => {
   return (
