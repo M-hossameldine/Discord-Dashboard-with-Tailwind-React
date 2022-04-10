@@ -30,21 +30,15 @@
     mx-2;
   }
 
-  .content-container {
-    @apply flex flex-col 
-    bg-gray-300 dark:bg-gray-700
-    m-0 h-full w-full
-    overflow-hidden;
-  }
-
   /***************************************/
   /* Top Navigation */
   /***************************************/
 
   .top-navigation {
-    @apply flex flex-row justify-evenly items-center 
-    bg-gray-300 dark:bg-gray-700 bg-opacity-90
-    m-0 w-full h-16
+    @apply absolute top-0 left-0 
+    flex flex-row justify-evenly items-center 
+    bg-gray-300 dark:bg-gray-700 
+    m-0 w-full h-[9vh]
     shadow-lg;
   }
 
@@ -84,6 +78,62 @@
     bg-transparent outline-none 
     text-gray-500 placeholder-gray-500 
     pl-1 rounded;
+  }
+
+  /***************************************/
+  /* Content Container */
+  /***************************************/
+  .content-container {
+    @apply relative flex flex-col 
+    bg-gray-300 dark:bg-gray-700
+    m-0 h-full w-full
+    overflow-hidden;
+  }
+
+  /***************************************/
+  /* Content (post) List */
+  /***************************************/
+
+  .content-list {
+    @apply flex flex-col-reverse
+    h-screen w-full m-0 pt-[10vh]
+    overflow-scroll;
+  }
+
+  .post {
+    @apply flex flex-row items-start justify-start
+    py-4 px-8 m-0
+    cursor-pointer;
+  }
+
+  .post-selected {
+    @apply bg-green-400 dark:bg-gray-900
+    shadow-md;
+  }
+
+  .avatar-wrapper {
+    @apply w-1/10 m-0 flex justify-end items-start;
+  }
+
+  .avatar {
+    @apply rounded-full w-14 h-14 mr-4;
+  }
+
+  .post-content {
+    @apply grow m-0 w-9/10;
+  }
+
+  .post-owner {
+    @apply font-semibold text-gray-800 dark:text-white cursor-pointer;
+  }
+
+  .post-text {
+    @apply text-lg text-left text-gray-800 dark:text-white;
+  }
+
+  .timestamp {
+    @apply text-xs text-left font-semibold text-gray-500 dark:text-gray-600
+    ml-2;
   }
 
   /***************************************/
