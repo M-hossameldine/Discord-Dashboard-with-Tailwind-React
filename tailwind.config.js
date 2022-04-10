@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'jit',
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false,
+  darkMode: 'class', // class, 'media' or boolean
   theme: {
     extend: {
       colors: {

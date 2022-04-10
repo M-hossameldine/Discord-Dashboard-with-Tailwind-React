@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import useDarkMode from '../../hooks/useDarkMode';
 
 import Icons from '../../constants/icons';
 const { FaSearch, FaHashtag, FaRegBell, FaUserCircle, FaMoon, FaSun } = Icons;
@@ -17,9 +17,11 @@ const TopNavigation = () => {
 };
 
 const ThemeIcon = () => {
-  const [darkTheme, setDarkTheme] = useState(false);
+  const [darkTheme, setDarkTheme] = useDarkMode(false);
 
-  const modeHandler = () => {};
+  const modeHandler = () => {
+    setDarkTheme((darkTheme) => !darkTheme);
+  };
 
   return (
     <span onClick={modeHandler}>
