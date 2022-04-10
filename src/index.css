@@ -96,7 +96,7 @@
 
   .content-list {
     @apply flex flex-col-reverse
-    h-screen w-full m-0 pt-[10vh] pb-14
+    h-screen w-full m-0 pt-[10vh] pb-20
     overflow-y-scroll overflow-x-hidden;
   }
 
