@@ -8,6 +8,7 @@
 - [Build Setup](#build_setup)
 - [Built Using](#built_using)
 - [TODO](#todo)
+- [Related Readings](#related_readings)
 - [Acknowledgements](#achknowledgement)
 
 ## About <a name= "about"></a>
@@ -39,6 +40,12 @@ This demo project aims to practice on Tailwind.
 
 - [ ] Add User Validation & Authentication
 - [ ] Add Backend & Database with Firebase.
+
+## Related Readings <a name="related_readings"></a>
+
+- [useDarkMode Hook](https://usehooks.com/useDarkMode/)
+- [useLocalStorage Hook](https://usehooks.com/useLocalStorage/)
+- [useMedia Hook](https://usehooks.com/useMedia/)
 
 ## Acknowledgements <a name="acknowledgement"></a>
 
